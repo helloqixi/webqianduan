@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        button{
+            width:80px;
+            height:35px;
+            line-height: 35px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid lavenderblush;
+            background: lavenderblush;
+            text-align: center;
+        }
+        #aaa,#bbb{
+            border: solid rebeccapurple;
+            margin: auto;
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="rrr">
+    <button onclick="add()">添加</button>
+    <button onclick="app()">添加</button>
+</div>
+<div id="aaa"></div>
+<div id="bbb"></div>
+<script>
+    function add() {
+        var btn = document.getElementById("aaa");
+        var newInput = document.createElement("input");
+        newInput.id = "btn";
+        newInput.type = "button";
+        newInput.value = "按钮";
+        btn.appendChild(newInput);
+    }
+    function app() {
+        var hhh = document.getElementById("bbb");
+        hhh.innerHTML= "<input id=\"btn\" type=\"button\" value=\"按钮\"/>"
+    }
+</script>
+</body>
+</html>
